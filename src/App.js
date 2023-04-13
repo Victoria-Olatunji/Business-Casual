@@ -11,18 +11,18 @@ import PatientRegistration from './pages/PatientRegistration';
 
 
 function App() {
-  // const [account, setAccount] = useState(); // state variable to set account.
+  const [account, setAccount] = useState(); // state variable to set account.
   
-  // useEffect(() => {
-  //   async function load() {
-  //     const web3 = new Web3(Web3.givenProvider || 'http://localhost:7545');
-  //     const accounts = await web3.eth.requestAccounts();
+  useEffect(() => {
+    async function load() {
+      const web3 = new Web3(Web3.givenProvider || 'http://localhost:7545');
+      const accounts = await web3.eth.requestAccounts();
       
-  //     setAccount(accounts[0]);
-  //   }
+      setAccount(accounts[0]);
+    }
     
-  //   load();
-  //  }, []);
+    load();
+   }, []);
   return (
     <div className="App">
       {/* <p>Your account is: {account}</p> */}

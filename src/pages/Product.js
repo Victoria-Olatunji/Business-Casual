@@ -1,77 +1,163 @@
 import React from 'react';
 import Layout from './Layout';
-import pic3 from '../img/products-01.jpg'
-import pic4 from '../img/products-02.jpg'
-import pic5 from '../img/products-03.jpg'
+import pic1 from '../img/intro.jpg'
+import pic2 from '../img/cloud.jpg'
+import pic3 from '../img/access.jpg'
+import pic4 from '../img/paperless.jpg'
+import pic5 from '../img/hospital.jpg'
+import pic6 from '../img/patient.jpg'
+import pic7 from '../img/lastpic.jpg'
+
+
 import Footer from '../components/Footer';
 
-function Product() {
+function Home() {
+
+    // const pics = pic1
+
   return (
     <>
-    <Layout />
-    <div>
-    <section class="page-section">
+      <Layout />
+      <div>
+      <section class="page-section clearfix">
             <div class="container">
-                <div class="product-item">
-                    <div class="product-item-title d-flex">
-                        <div class="bg-faded p-5 d-flex ms-auto rounded">
-                            <h2 class="section-heading mb-0">
-                                <span class="section-heading-upper">Blended to Perfection</span>
-                                <span class="section-heading-lower">Coffees & Teas</span>
-                            </h2>
-                        </div>
-                    </div>
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src={pic3} alt="..." />
-                    <div class="product-item-description d-flex me-auto">
-                        <div class="bg-faded p-5 rounded"><p class="mb-0">We take pride in our work, and it shows. Every time you order a beverage from us, we guarantee that it will be an experience worth having. Whether it's our world famous Venezuelan Cappuccino, a refreshing iced herbal tea, or something as simple as a cup of speciality sourced black coffee, you will be coming back for more.</p></div>
+                <div class="intro">
+                    <div class ="first">
+                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src={pic1} alt="..." />
+                    </div>       
+                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                        <h2 class="section-heading mb-4">
+                            {/* Get your medical history stored on the blockchain */}
+                            An electronic medical record system 
+                            that aids easy storage of medical records 
+
+                        </h2>
+                            {/* <span class="section-heading-upper">Fresh Coffee</span> */}
+                            {/* <span class="section-heading-lower">Worth Drinking</span> */}
+         
+                        <p class="mb-3">Store and access your medical records from anywhere and at anytime. Trusted by Government Authorities</p>
+                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="#sectioniii-container">Get Started!</a></div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
-    <div>
-    <section class="page-section">
-            <div class="container">
-                <div class="product-item">
-                    <div class="product-item-title d-flex">
-                        <div class="bg-faded p-5 d-flex me-auto rounded">
-                            <h2 class="section-heading mb-0">
-                                <span class="section-heading-upper">Delicious Treats, Good Eats</span>
-                                <span class="section-heading-lower">Bakery & Kitchen</span>
-                            </h2>
+        <section className="page-section about-heading">
+            <div className="sectionii-container">
+                <img className="img-fluid rounded about-heading-img mb-3 mb-lg-0" src={pic7} alt="..."  />
+            </div>
+        </section>
+      </div>
+        {/* <section class="page-section cta">
+            <div class="sec-container">
+                <div class="sectionII-images">
+                    <div class="sectionII-images col-xl-9 mx-auto">
+                        <div class="section-imagei">
+                        <img class="image" src={pic2} alt="accessibility" />
+                        <div class="image-text">A seamless and secured platform </div>
                         </div>
+                        <div class="section-imageii">
+                        <img class="image" src={pic3} alt="accessibility" />
+                        <p class="image-text"> Easy accessibility of records</p>
+                        </div>
+                        <div class="section-imageiii">
+                        <img class="image" src={pic4} alt="accessibility" />
+                        <p class="image-text">Digitalize your medical record</p>
+                        </div>            
                     </div>
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src={pic4} alt="..." />
-                    <div class="product-item-description d-flex ms-auto">
-                        <div class="bg-faded p-5 rounded"><p class="mb-0">Our seasonal menu features delicious snacks, baked goods, and even full meals perfect for breakfast or lunchtime. We source our ingredients from local, oragnic farms whenever possible, alongside premium vendors for specialty goods.</p></div>
+                </div>
+            </div>
+        </section>  */}
+        <section>
+        <div class="testi">Register</div>
+        <div className="page-section clearfix">
+            <div className='test'>
+            <div class="col-sm-6 col-md-6 col-lg-4 sectioniii-imagei">
+            <img class="sectioniii-image" src={pic5} alt="accessibility" />
+            <div class="sectioniii-button mx-auto"><a class="btn btn-sectioniii btn-xl" href="#sectioniii-container">Hospital Registration</a></div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 sectioniii-imagei">
+            <img class="sectioniii-image" src={pic5} alt="accessibility" />
+            <div class="sectioniii-button mx-auto"><a class="btn btn-sectioniii btn-xl" href="#sectioniii-container">Hospital Registration</a></div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 sectioniii-imagei">
+            <img class="sectioniii-image" src={pic5} alt="accessibility" />
+            <div class="sectioniii-button mx-auto"><a class="btn btn-sectioniii btn-xl" href="#sectioniii-container">Hospital Registration</a></div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 sectioniii-imagei">
+            <img class="sectioniii-image" src={pic5} alt="accessibility" />
+            <div class="sectioniii-button mx-auto"><a class="btn btn-sectioniii btn-xl" href="#sectioniii-container">Hospital Registration</a></div>
+            </div>
+            </div>
+            
+        <div class="row g-3" id="row">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="card" >
+      <img class="intro-img img-fluid mb-3 mb-lg-0 rounded card-img-top" src={pic1} alt="..." />
+        </div>
+      </div>
+    </div>
+    <div class="row g-3" id="row">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="card" >
+      <img class="intro-img img-fluid mb-3 mb-lg-0 rounded card-img-top" src={pic1} alt="..." />
+        </div>
+      </div>
+    </div>
+    <div class="row g-3" id="row">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="card" >
+      <img class="intro-img img-fluid mb-3 mb-lg-0 rounded card-img-top" src={pic1} alt="..." />
+        </div>
+      </div>
+    </div> 
+        </div>
+        <section class="page-section cta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded text-center rounded">
+                            <h2 class="section-heading mb-4">
+                            <img class="sectioniii-image" src={pic5} alt="accessibility" />
+                            </h2>
+                            <div class="sectioniii-button mx-auto"><a class="btn btn-sectioniii btn-xl" href="#sectioniii-container">Hospital Registration</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
-    <div>
-    <section class="page-section">
-            <div class="container">
-                <div class="product-item">
-                    <div class="product-item-title d-flex">
-                        <div class="bg-faded p-5 d-flex ms-auto rounded">
-                            <h2 class="section-heading mb-0">
-                                <span class="section-heading-upper">From Around the World</span>
-                                <span class="section-heading-lower">Bulk Speciality Blends</span>
-                            </h2>
+        </section>
+        <section class="page-section-third">
+            <div id="sectioniii-container">
+            <div className="lieii">Register/Login to Healthens</div>
+                Sign Up/Login to Healthens
+            </div>
+            <div class="sectionIII-images">
+                    <div class="sectionIII-images col-xl-9 mx-auto">
+                        <div class="sectioniii-imagei">
+                        <img class="sectioniii-image" src={pic5} alt="accessibility" />
+                        <div class="sectioniii-button mx-auto"><a class="btn btn-sectioniii btn-xl" href="#sectioniii-container">Hospital Registration</a></div>
+                        </div>
+                        <div class="sectioniii-imageii">
+                        <img class="sectioniii-image" src={pic6} alt="accessibility" />
+                        <div class="sectioniii-button mx-auto"><a class="btn btn-sectioniii btn-xl" href="#sectioniii-container">Patient Registration</a></div>
+                        {/* <p class="image-text">Patient Login</p> */}
+                        </div>
+                        <div class="sectioniii-imageiii">
+                        <img class="sectioniii-image" src={pic5} alt="accessibility" />
+                        <div class="sectioniii-button mx-auto"><a class="btn btn-sectioniii btn-xl" href="/PatientLogin">Hospital Login</a></div>
+                        </div>
+                        <div class="sectioniii-imageiv">
+                        <img class="sectioniii-image" src={pic6} alt="accessibility" />
+                        <div class="sectioniii-button mx-auto"><a class="btn btn-sectioniii btn-xl" href="/PatientLogin">Patient Login</a></div>
                         </div>
                     </div>
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src={pic5} alt="..." />
-                    <div class="product-item-description d-flex me-auto">
-                        <div class="bg-faded p-5 rounded"><p class="mb-0">Travelling the world for the very best quality coffee is something take pride in. When you visit us, you'll always find new blends from around the world, mainly from regions in Central and South America. We sell our blends in smaller to large bulk quantities. Please visit us in person for more details.</p></div>
-                    </div>
                 </div>
-            </div>
         </section>
-    </div>
-    <Footer />
+        
+        
+        <Footer /> 
     </>
-  );
+    );
 }
 
-export default Product;
+export default Home;
